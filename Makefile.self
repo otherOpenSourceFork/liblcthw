@@ -22,5 +22,7 @@ clean:
 install: all
 	install -d $(DESTDIR)$(PREFIX)/lib/
 	install -d $(DESTDIR)$(PREFIX)/include/lcthw
+	install -d $(DESTDIR)$(PREFIX)/include/lcthw/tests
 	install -m 0644 $(TARGET) $(DESTDIR)$(PREFIX)/lib/
+	install -m 0644 tests/minunit.h $(DESTDIR)$(PREFIX)/include/lcthw/tests
 	install -m 0644 src/lcthw/*.h $(DESTDIR)$(PREFIX)/include/lcthw
